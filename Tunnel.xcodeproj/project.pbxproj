@@ -15,6 +15,8 @@
 		A21C71271A4563DC0042FA1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A21C71261A4563DC0042FA1A /* Images.xcassets */; };
 		A21C712A1A4563DC0042FA1A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A21C71281A4563DC0042FA1A /* LaunchScreen.xib */; };
 		A21C71361A4563DC0042FA1A /* TunnelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C71351A4563DC0042FA1A /* TunnelTests.swift */; };
+		A21C71411A4569760042FA1A /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C71401A4569760042FA1A /* Field.swift */; };
+		A21C71431A456A4A0042FA1A /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21C71421A456A4A0042FA1A /* Tile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		A21C712F1A4563DC0042FA1A /* TunnelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TunnelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A21C71341A4563DC0042FA1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A21C71351A4563DC0042FA1A /* TunnelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelTests.swift; sourceTree = "<group>"; };
+		A21C71401A4569760042FA1A /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		A21C71421A456A4A0042FA1A /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 		A21C71181A4563DB0042FA1A /* Tunnel */ = {
 			isa = PBXGroup;
 			children = (
+				A21C713F1A4569590042FA1A /* Models */,
 				A21C711B1A4563DB0042FA1A /* AppDelegate.swift */,
 				A21C711D1A4563DB0042FA1A /* GameScene.sks */,
 				A21C711F1A4563DC0042FA1A /* GameScene.swift */,
@@ -116,6 +121,15 @@
 				A21C71341A4563DC0042FA1A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A21C713F1A4569590042FA1A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A21C71401A4569760042FA1A /* Field.swift */,
+				A21C71421A456A4A0042FA1A /* Tile.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +235,8 @@
 			files = (
 				A21C71201A4563DC0042FA1A /* GameScene.swift in Sources */,
 				A21C71221A4563DC0042FA1A /* GameViewController.swift in Sources */,
+				A21C71431A456A4A0042FA1A /* Tile.swift in Sources */,
+				A21C71411A4569760042FA1A /* Field.swift in Sources */,
 				A21C711C1A4563DB0042FA1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,8 +363,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -357,8 +375,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Tunnel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
